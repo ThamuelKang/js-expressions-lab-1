@@ -54,12 +54,11 @@ function convertCToF(tempInCelsius) {
     return ((tempInCelsius * 9 / 5) + 32)
 }
 
+// console.log(convertFToC(70))
+// console.log(convertCToF(20))
 
-const tot_temperature_in_celsius = convertFToC(day1TempF) + convertFToC(day3TempF) + convertFToC(day5TempF) + convertFToC(day7TempF) + convertFToC(day9TempF)
-    + convertFToC(day11TempF) + convertFToC(day13TempF) + convertFToC(day15TempF) + convertFToC(day17TempF) + convertFToC(day19TempF)
-    + convertFToC(day21TempF) + convertFToC(day23TempF) + convertFToC(day25TempF) + convertFToC(day27TempF) + convertFToC(day29TempF)
-    + day2TempC + day4TempC + day6TempC + day8TempC + day10TempC + day12TempC + day14TempC + day16TempC + day18TempC + day20TempC + day22TempC
-    + day24TempC + day26TempC + day28TempC + day30TempC
+console.log(convertFToC(day5TempF))
+
 
 const tot_temperature_in_fahrenheit = convertCToF(day2TempC) + convertCToF(day4TempC) + convertCToF(day6TempC) + convertCToF(day8TempC) + convertCToF(day10TempC)
     + convertCToF(day12TempC) + convertCToF(day14TempC) + convertCToF(day16TempC) + convertCToF(day18TempC) + convertCToF(day20TempC)
@@ -67,8 +66,7 @@ const tot_temperature_in_fahrenheit = convertCToF(day2TempC) + convertCToF(day4T
     + day1TempF + day3TempF + day5TempF + day7TempF + day9TempF + day11TempF + day13TempF
     + day15TempF + day17TempF + day19TempF + day21TempF + day23TempF + day25TempF + day27TempF + day29TempF
 
-
-
+const tot_temperature_in_celsius = convertFToC(tot_temperature_in_fahrenheit)
 
 const avg_temperature_in_celsius = tot_temperature_in_celsius / 30
 const avg_temperature_in_fahrenheit = tot_temperature_in_fahrenheit / 30
@@ -87,6 +85,12 @@ module.exports = {
     // avg_temperature_in_celsius
 };
 
+
+// const tot_temperature_in_celsius = convertFToC(day1TempF) + convertFToC(day3TempF) + convertFToC(day5TempF) + convertFToC(day7TempF) + convertFToC(day9TempF)
+//     + convertFToC(day11TempF) + convertFToC(day13TempF) + convertFToC(day15TempF) + convertFToC(day17TempF) + convertFToC(day19TempF)
+//     + convertFToC(day21TempF) + convertFToC(day23TempF) + convertFToC(day25TempF) + convertFToC(day27TempF) + convertFToC(day29TempF)
+//     + day2TempC + day4TempC + day6TempC + day8TempC + day10TempC + day12TempC + day14TempC + day16TempC + day18TempC + day20TempC + day22TempC
+//     + day24TempC + day26TempC + day28TempC + day30TempC
 
 // const tot_temperature_in_fahrenheit = day1TempF + day3TempF + day5TempF + day7TempF + day9TempF + day11TempF + day13TempF
 //     + day15TempF + day17TempF + day19TempF + day21TempF + day23TempF + day25TempF + day27TempF + day29TempF
